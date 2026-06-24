@@ -20,43 +20,22 @@ const SectionTitle = ({ type, title, globalSettings, showTitle = true }: Section
         return menuSections.find((s) => s.id === type)?.title;
     }, [menuSections, type, title]);
 
-    const themeColor = globalSettings?.themeColor || "#E31C24"; // 默认瑞士红
+    const themeColor = globalSettings?.themeColor;
+
     if (!showTitle) return null;
 
     return (
-        <div
-            className="flex flex-col w-full"
+        <h3
+            className="pb-2 border-b font-bold"
             style={{
-                marginBottom: `${globalSettings?.paragraphSpacing || 12}px`,
+                fontSize: `${globalSettings?.headerSize || 18}px`,
+                color: themeColor,
+                borderColor: themeColor,
+                marginBottom: `${globalSettings?.paragraphSpacing}px`,
             }}
         >
-            <div className="flex items-center gap-2.5">
-                {/* 瑞士风格高亮色块 */}
-                <div
-                    className="w-[6px] rounded-sm shrink-0"
-                    style={{
-                        height: `${(globalSettings?.headerSize || 18) * 1.1}px`,
-                        backgroundColor: themeColor,
-                    }}
-                />
-                <h3
-                    className="font-black tracking-wider uppercase"
-                    style={{
-                        fontSize: `${globalSettings?.headerSize || 18}px`,
-                        color: "#0f172a",
-                    }}
-                >
-                    {renderTitle}
-                </h3>
-            </div>
-            {/* 不对称的分隔线 */}
-            <div
-                className="w-full h-[1px] mt-2 opacity-15"
-                style={{
-                    backgroundColor: "#0f172a",
-                }}
-            />
-        </div>
+            {renderTitle}
+        </h3>
     );
 };
 

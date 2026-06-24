@@ -12,7 +12,7 @@ export const TEMPLATE_SNAPSHOT_VERSION = 1;
 export const TEMPLATE_SNAPSHOT_ROOT_ATTRIBUTE = "data-template-snapshot-root";
 export const TEMPLATE_SNAPSHOT_ROOT_SELECTOR = `[${TEMPLATE_SNAPSHOT_ROOT_ATTRIBUTE}]`;
 export const TEMPLATE_SNAPSHOT_PUBLIC_DIR = "template-snapshots";
-export const TEMPLATE_PREVIEW_LOCALES = ["zh", "en"] as const;
+export const TEMPLATE_PREVIEW_LOCALES = ["zh", "en", "tr"] as const;
 
 export type TemplatePreviewLocale = (typeof TEMPLATE_PREVIEW_LOCALES)[number];
 
@@ -29,6 +29,7 @@ export const createEmptyTemplateSnapshotManifest =
     locales: {
       zh: {},
       en: {},
+      tr: {},
     },
   });
 

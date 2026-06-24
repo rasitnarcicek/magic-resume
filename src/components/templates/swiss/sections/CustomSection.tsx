@@ -1,4 +1,3 @@
-import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import SectionWrapper from "../../shared/SectionWrapper";
@@ -19,70 +18,38 @@ const CustomSection = ({ sectionId, title, items, globalSettings, showTitle = tr
     const locale = useLocale();
     const visibleItems = items?.filter((item) => item.visible && (item.title || item.description));
     const centerSubtitle = globalSettings?.centerSubtitle;
-    const themeColor = globalSettings?.themeColor || "#E31C24";
+    const flexLayout = globalSettings?.flexibleHeaderLayout;
 
     return (
         <SectionWrapper sectionId={sectionId} style={{ marginTop: `${globalSettings?.sectionSpacing || 24}px` }}>
             <SectionTitle title={title} type="custom" globalSettings={globalSettings} showTitle={showTitle} />
             <AnimatePresence mode="popLayout">
-                <div className="flex flex-col gap-6" style={{ marginTop: `${globalSettings?.paragraphSpacing || 16}px` }}>
-                    {visibleItems.map((item) => (
-                        <motion.div key={item.id} layout="position" className="group">
-                            {/* 不对称网格对齐头部 */}
-                            <div className="flex items-baseline justify-between gap-3">
-                                <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-3 gap-y-1">
-                                    <h4 
-                                        className="font-extrabold text-slate-800 tracking-tight"
-                                        style={{ fontSize: `${globalSettings?.subheaderSize || 16}px` }}
-                                    >
-                                        {item.title}
-                                    </h4>
-                                    {centerSubtitle && (
-                                        <span 
-                                            className="font-medium text-slate-500 border-l border-slate-300 pl-3 text-[14px]"
-                                            style={{ fontSize: `${(globalSettings?.subheaderSize || 16) - 1}px` }}
-                                        >
-                                            {item.subtitle}
-                                        </span>
-                                    )}
-                                </div>
-                                <div 
-                                    className="ml-auto self-center font-mono text-slate-400 bg-slate-50 border border-slate-100/80 px-2 py-0.5 rounded text-[11px] font-semibold shrink-0"
-                                >
-                                    {formatDateString(item.dateRange, locale)}
-                                </div>
+                {visibleItems.map((item) => (
+                    <motion.div key={item.id} layout="position" style={{ marginTop: `${globalSettings?.paragraphSpacing}px` }}>
+                        <motion.div layout="position" className="flex items-center gap-2">
+                            <div className={`flex items-center gap-2 ${flexLayout ? "" : "flex-[1.5]"}`}>
+                                <h4 className="font-bold" style={{ fontSize: `${globalSettings?.subheaderSize || 16}px` }}>{item.title}</h4>
                             </div>
-
-                            {/* 非居中模式下的副标题展示 */}
-                            {!centerSubtitle && item.subtitle && (
-                                <div 
-                                    className="font-semibold text-slate-500 mt-1 uppercase tracking-wider"
-                                    style={{ fontSize: `${(globalSettings?.subheaderSize || 16) - 2}px` }}
-                                >
+                            {centerSubtitle && (
+                                <motion.div layout="position" className={`text-subtitleFont ${flexLayout ? "ml-[16px]" : "flex-1"}`} style={{ fontSize: `${globalSettings?.subheaderSize || 16}px` }}>
                                     {item.subtitle}
-                                </div>
-                            )}
-
-                            {/* 自定义描述：移除 text-justify 修复列表小点拉伸 bug */}
-                            {item.description && (
-                                <motion.div layout="position" className="relative pl-4 mt-2.5">
-                                    <div 
-                                        className="absolute left-0 top-1 bottom-1 w-[1.5px] opacity-20 group-hover:opacity-100 transition-opacity"
-                                        style={{ backgroundColor: themeColor }}
-                                    />
-                                    <div 
-                                        className="text-slate-600 prose prose-sm max-w-none prose-p:my-1 [&>ul]:pl-4 [&>ul]:mt-1 [&>ul>li]:my-0.5 marker:text-slate-400"
-                                        dangerouslySetInnerHTML={{ __html: normalizeRichTextContent(item.description) }}
-                                        style={{ 
-                                            fontSize: `${globalSettings?.baseFontSize || 13}px`, 
-                                            lineHeight: globalSettings?.lineHeight || 1.6 
-                                        }}
-                                    />
                                 </motion.div>
                             )}
+                            <span className={`text-subtitleFont shrink-0 ${flexLayout ? "ml-auto" : "flex-1 text-right"}`} style={{ fontSize: `${globalSettings?.subheaderSize || 16}px` }}>
+                                {formatDateString(item.dateRange, locale)}
+                            </span>
                         </motion.div>
-                    ))}
-                </div>
+                        {!centerSubtitle && item.subtitle && (
+                            <motion.div layout="position" className="text-subtitleFont mt-1" style={{ fontSize: `${globalSettings?.subheaderSize || 16}px` }}>{item.subtitle}</motion.div>
+                        )}
+                        {item.description && (
+                            <motion.div layout="position" className="mt-1 text-baseFont"
+                                style={{ fontSize: `${globalSettings?.baseFontSize || 14}px`, lineHeight: globalSettings?.lineHeight || 1.6 }}
+                                dangerouslySetInnerHTML={{ __html: normalizeRichTextContent(item.description) }}
+                            />
+                        )}
+                    </motion.div>
+                ))}
             </AnimatePresence>
         </SectionWrapper>
     );

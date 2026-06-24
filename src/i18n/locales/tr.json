@@ -1,0 +1,819 @@
+{
+  "common": {
+    "title": "Magic Resume",
+    "subtitle": "AI Destekli Özgeçmiş Editörü",
+    "description": "Magic Resume açık kaynak kodlu, ücretsiz ve gizlilik odaklı bir özgeçmiş editörüdür. Kayıt gerekmez, tüm veriler yerel olarak depolanır, veri yedekleme ve dışa aktarma desteği ile özgeçmiş verilerinizin her zaman erişilebilir olmasını sağlar.",
+    "dashboard": "Panel",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "newResume": "Yeni Özgeçmiş",
+    "copy": "Kopyala",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "deleteSuccess": "Başarıyla silindi",
+    "deleteModuleConfirm": "Bu modülü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "configured": "Yapılandırıldı",
+    "notConfigured": "Yapılandırılmadı"
+  },
+  "home": {
+    "header": {
+      "title": "Magic Resume",
+      "startButton": "Başla",
+      "features": "Özellikler",
+      "pricing": "Fiyatlandırma",
+      "about": "Hakkında",
+      "login": "Giriş Yap",
+      "register": "Kayıt Ol",
+      "dashboard": "Panel"
+    },
+    "hero": {
+      "badge": "Akıllı Özgeçmiş Oluşturma",
+      "title": "Özgeçmiş Oluşturmayı Basit ve Akıllı Hale Getirin",
+      "subtitle": "Magic Resume, hızlıca profesyonel özgeçmişler oluşturmanıza yardımcı olmak için AI teknolojisini kullanır. Kayıt gerekmez, kullanımı ücretsizdir ve güvenli veri depolama sunar.",
+      "cta": "Hemen Başla",
+      "secondary": "Şablonlara Göz At"
+    },
+    "features": {
+      "title": "Neden Magic Resume?",
+      "subtitle": "İş arama sürecinizi kolaylaştırmak için hepsi bir arada bir özgeçmiş çözümü sunuyoruz",
+      "ai": {
+        "badge": "AI Akıllı Denetim",
+        "title": "Akıllı Tespit, Profesyonel Tavsiye",
+        "description": "Dahili akıllı dilbilgisi denetimi, uygun olmayan ifadeleri otomatik olarak belirler, profesyonel düzenleme önerileri sunar ve özgeçmişinizi daha etkileyici hale getirir.",
+        "item1": "Akıllı iyileştirme",
+        "item1_description": "AI, içerik ifadesini otomatik olarak optimize ederek özgeçmişinizi daha profesyonel hale getirir",
+        "item2": "Dilbilgisi denetimi",
+        "item2_description": "Dilbilgisi ve yazım hatalarını otomatik olarak tespit eder ve düzeltir"
+      },
+      "storage": {
+        "badge": "Yerel Depolama",
+        "title": "Veri Güvenliği, Önce Gizlilik",
+        "description": "Tüm özgeçmiş verileri tamamen yerel olarak depolanır, gizlilik sızıntıları konusunda endişelenmenize gerek kalmaz. Veri dışa aktarma ve yedekleme desteği ile verileriniz her zaman güvendedir.",
+        "item1": "Yerel dosya depolama",
+        "item1_description": "Özgeçmiş verileri bilgisayarınızın sabit diskinde güvenli bir şekilde saklanır",
+        "item2": "Çoklu dışa aktarma formatları",
+        "item2_description": "PDF ve JSON formatında dışa aktarma desteği",
+        "item3": "Veri yedekleme desteği"
+      },
+      "preview": {
+        "badge": "Gerçek Zamanlı Önizleme",
+        "title": "Ne Görüyorsanız Onu Alırsınız",
+        "item1": "Düzenleme efektlerinin gerçek zamanlı önizlemesi",
+        "item2": "Farklı dışa aktarma formatları desteği"
+      }
+    },
+    "news": {
+      "label": "Haberler",
+      "content": "Yeni AI Özgeçmiş İyileştirme Özelliği Yayında"
+    },
+    "footer": {
+      "copyright": "© 2025 Magic Resume. Tüm hakları saklıdır."
+    },
+    "changelog": "Değişim Günlüğü",
+    "cta": {
+      "title": "Yeni Kariyer Sayfanızı Açın",
+      "description": "Etkileyici bir özgeçmiş oluşturmak için hemen Magic Resume'u kullanmaya başlayın",
+      "button": "Ücretsiz Kullanmaya Başla"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "question": "Magic Resume ücretsiz mi?",
+          "answer": "Magic Resume şu anda ücretsizdir ve temel özgeçmiş oluşturma ihtiyaçlarını karşılar. Açık kaynak sürümünün özellikleri değişmeden kalacaktır."
+        },
+        {
+          "question": "Özgeçmiş verilerim güvende mi?",
+          "answer": "Evet, çok güvenli. Magic Resume yerel depolama kullanır, yani tüm verileriniz kendi cihazınızda saklanır ve bulut depolama kullanılmaz, bu da tam gizlilik koruması sağlar."
+        },
+        {
+          "question": "Hangi dışa aktarma formatları destekleniyor?",
+          "answer": "Şu anda PDF dışa aktarma desteği sunuyoruz, böylece özgeçmişiniz her cihazda tutarlı görünür. Gelecekte daha fazla formatı desteklemeyi planlıyoruz."
+        },
+        {
+          "question": "Cihazlar arasında nasıl senkronizasyon yapabilirim?",
+          "answer": "JSON yapılandırması dışa aktarma özelliği sunuyoruz, bu sayede özgeçmiş ayarlarınızı JSON formatında kaydedebilir ve herhangi bir cihazda buna erişebilirsiniz."
+        },
+        {
+          "question": "Ne kadar özelleştirilebilir?",
+          "answer": "Renkler, düzenler ve daha fazlası dahil olmak üzere zengin özelleştirme seçenekleri sunuyoruz, bu sayede stilinizi kişisel tercihlerinize ve sektör gereksinimlerine göre ayarlayabilirsiniz."
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "appName": "Magic Resume",
+      "resumes": "Özgeçmişler",
+      "settings": "Ayarlar",
+      "templates": "Şablonlar",
+      "ai": "AI Ayarları"
+    },
+    "resumes": {
+      "created": "Oluşturulma Tarihi",
+      "synced": "Senkronize Edilen Dosyalar",
+      "view": "Görüntüle",
+      "myResume": "Özgeçmişlerim",
+      "create": "Özgeçmiş Oluştur",
+      "newResume": "Yeni Özgeçmiş",
+      "newResumeDescription": "Başlamak için yeni bir özgeçmiş oluşturun.",
+      "import": "Özgeçmiş İçe Aktar",
+      "untitled": "Adsız Özgeçmiş",
+      "importSuccess": "Yapılandırma başarıyla içe aktarıldı",
+      "importError": "İçe aktarma başarısız, lütfen dosya formatını kontrol edin",
+      "importDialog": {
+        "title": "Özgeçmiş İçe Aktar",
+        "jsonTitle": "JSON İçe Aktar",
+        "jsonDescription": "Dışa aktarılmış bir özgeçmiş yapılandırma dosyasını (.json) içe aktarın",
+        "pdfTitle": "PDF İçe Aktar",
+        "pdfDescription": "Gemini kullanarak yapılandırılmış verilere dönüştürün",
+        "importing": "İçe aktarılıyor, lütfen bekleyin...",
+        "geminiConfigRequired": "Lütfen önce AI ayarlarından Gemini API Anahtarını ve Model Kimliğini yapılandırın",
+        "pdfSuccess": "PDF başarıyla içe aktarılı",
+        "pdfError": "PDF içe aktarma başarısız. Lütfen PDF içeriğini veya Gemini yapılandırmasını kontrol edin"
+      },
+      "notice": {
+        "title": "Dikkat",
+        "description": "Tarayıcı önbelleği temizlendiğinde verilerinizin kaybolmasını önlemek için ayarlardan bir yedekleme klasörü yapılandırmanız önerilir",
+        "goToSettings": "Ayarlara Git"
+      },
+      "deleteConfirmTitle": "Özgeçmişi Silmeyi Onaylıyor Musunuz?",
+      "deleteConfirmDescription": "Bu işlem geri alınamaz. Bu, özgeçmişi kalıcı olarak silecek ve verileri cihazınızdan kaldıracaktır.",
+      "createDialog": {
+        "title": "Yeni Özgeçmiş Oluştur",
+        "description": "Boş bir şablonla yeni bir özgeçmişe başlayın",
+        "tabs": {
+          "fromTemplate": "Şablondan",
+          "uploadFile": "Dosya Yükle"
+        },
+        "namePlaceholder": "İsim",
+        "switchTemplate": "Şablon Değiştir",
+        "cancel": "İptal",
+        "create": "Oluştur",
+        "blankTitle": "Boş Özgeçmiş",
+        "startFromBlank": "Boş Sayfadan Başla",
+        "startFromTemplate": "Şablondan Başla",
+        "blankCardDescription": "Varsayılan bir düzen kullanın ve sıfırdan başlayın.",
+        "blankThumbnailDescription": "Temiz bir sayfa ile başlayın ve tam yaratıcı kontrolle özgeçmişinizi şekillendirin.",
+        "createNow": "Şimdi Oluştur",
+        "backToGrid": "Şablon listesine dön",
+        "blankPreviewDescription": "Boş bir sayfa seçin ve her şeyi herhangi bir kısıtlama olmadan sıfırdan inşa edin.",
+        "useThisTemplate": "Bu Şablonu Kullan",
+        "sample": {
+          "company": "Google",
+          "position": "Kıdemli Yazılım Mühendisi",
+          "present": "Günümüz",
+          "workDescription": "Frontend ekibine liderlik ettim ve sayfa performansını %40 artırdım."
+        }
+      }
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "syncDirectory": {
+        "title": "Senkronizasyon Dizini",
+        "description": "Özgeçmişlerinizi senkronize etmek ve yedeklemek için bir klasör seçin.",
+        "currentSyncFolder": "Güncel Senkronizasyon Klasörü",
+        "noFolderConfigured": "Klasör yapılandırılmadı",
+        "changeFolder": "Klasörü Değiştir",
+        "selectFolder": "Klasör Seç"
+      },
+      "sync": {
+        "title": "Senkronizasyon Dizini",
+        "description": "Özgeçmişlerinizi senkronize etmek ve yedeklemek için bir klasör seçin.",
+        "select": "Klasör Seç"
+      },
+      "ai": {
+        "title": "AI Yapılandırması",
+        "currentModel": "Güncel Model",
+        "selectModel": "Model Seç",
+        "getApiKey": "API Anahtarı Al",
+        "doubao": {
+          "title": "Doubao",
+          "description": "Volcengine'den API anahtarı al",
+          "apiKey": "Doubao API Key",
+          "modelId": "Model ID"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "DeepSeek Platformundan API anahtarı al",
+          "apiKey": "DeepSeek API Key"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "OpenAI veya OpenAI formatıyla uyumlu bir platformdan API anahtarı al",
+          "apiKey": "OpenAI API Key",
+          "modelId": "Model ID",
+          "apiEndpoint": "API Uç Noktası, örnek: https://openai.example.org/v1"
+        },
+        "gemini": {
+          "title": "Gemini",
+          "description": "Metin iyileştirme, dilbilgisi denetimi ve PDF içe aktarmayı destekler. Önerilen model: gemini-flash-latest",
+          "apiKey": "Gemini API Key",
+          "modelId": "Gemini Model ID"
+        }
+      }
+    },
+          "templates": {
+                  "title": "Şablonlar",
+                  "useTemplate": "Şablonu Kullan",
+                  "preview": "Önizleme",
+                  "switchTemplate": "Şablon Değiştir",
+                  "swiss": {
+                    "name": "İsviçre Estetiği",
+                    "description": "Güçlü tipografik hiyerarşi ve geometrik vurgularla sanatsal Bauhaus düzeni, modern minimalizm gösterisi"
+                  },
+                  "classic": {
+              "name": "Klasik",
+        "description": "Geleneksel ve minimalist düzen, çoğu iş başvurusu için uygundur"
+      },
+      "modern": {
+        "name": "İki Sütunlu",
+        "description": "Klasik iki sütunlu düzen, kişisel özellikleri vurgular"
+      },
+      "leftRight": {
+        "name": "Bölüm Başlığı Arka Planlı",
+        "description": "Arka plan rengine sahip belirgin bölüm başlıkları"
+      },
+      "timeline": {
+        "name": "Zaman Çizelgesi Düzeni",
+        "description": "Kronolojik sırayı vurgulayan zaman çizelgesi stili"
+      },
+      "minimalist": {
+        "name": "Minimalist",
+        "description": "Geniş beyaz alan, temiz ve saf bir düzen stili"
+      },
+      "elegant": {
+        "name": "Zarif",
+        "description": "Merkezi başlıklı tek sütunlu tasarım, zarafet dokunuşuyla"
+      },
+      "creative": {
+        "name": "Yaratıcı",
+        "description": "Görsel kontrastlı tasarım, canlı ve kişiselleştirilmiş"
+      },
+      "editorial": {
+        "name": "Editöryal",
+        "description": "Kalın tırnaklı (serif) ve zarif tırnaksız fontların lüks karışımı"
+      }
+    }
+  },
+  "pdfExport": {
+      "modal": {
+        "title": "Özgeçmişi Dışa Aktar",
+        "subtitle": "Özgeçmişinizi dışa aktarmak istediğiniz formatı seçin",
+        "pdfDesc": "%100 format doğruluğu ile yüksek hassasiyetli işleme. İş başvuruları için önerilir.",
+        "printDesc": "Sistem yazdırma iletişim kutusu ile kaydedin. Özel kenar boşlukları veya yedek olarak kullanın.",
+        "jsonDesc": "Özgeçmiş verilerinizi yedeklemek veya cihazlar arasında aktarmak için JSON olarak dışa aktarın.",
+        "markdownDesc": "AI modelleriyle kolay paylaşım için düz Markdown metnine dönüştürün.",
+        "privacyNotice": "Magic Resume, özgeçmiş verilerinizi asla toplamayacağını, yüklemeyeceğini veya saklamayacağını taahhüt eder. Gizliliğiniz tamamen korunmaktadır."
+      },
+      "button": {
+        "export": "Dışa Aktar",
+        "exportPdf": "PDF Dışa Aktar (Sunucu)",
+        "exportJson": "JSON Yapılandırmasını Dışa Aktar",
+        "exportMarkdown": "Markdown Dışa Aktar",
+        "exporting": "Dışa aktarılıyor...",
+        "exportingJson": "Dışa aktarılıyor...",
+        "exportingMarkdown": "Dışa aktarılıyor...",
+        "print": "Tarayıcı Yazdır"
+      },
+      "toast": {
+      "success": "PDF başarıyla dışa aktarıldı",
+      "error": "PDF dışa aktarma başarısız",
+      "jsonSuccess": "Yapılandırma başarıyla dışa aktarıldı",
+      "jsonError": "Yapılandırma dışa aktarma başarısız",
+      "markdownSuccess": "Markdown başarıyla dışa aktarıldı",
+      "markdownError": "Markdown dışa aktarma başarısız"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "Şablon Değiştir",
+    "grammarCheck": {
+      "idle": "AI Dilbilgisi Denetimi",
+      "checking": "Denetleniyor...",
+      "configurePrompt": "Lütfen AI Modelini yapılandırın",
+      "configureButton": "Yapılandır",
+      "errorToast": "Dilbilgisi denetimi başarısız oldu, lütfen tekrar deneyin"
+    },
+    "sidePanel": {
+      "expand": "Yan Paneli Genişlet",
+      "collapse": "Yan Paneli Daralt"
+    },
+    "editPanel": {
+      "expand": "Düzenleme Panelini Genişlet",
+      "collapse": "Düzenleme Panelini Daralt"
+    },
+    "previewPanel": {
+      "expand": "Önizleme Panelini Genişlet",
+      "collapse": "Önizleme Panelini Daralt"
+    },
+    "github": "GitHub",
+    "backToDashboard": "Panele Dön",
+    "copyResume": {
+      "tooltip": "Özgeçmişi Kopyala",
+      "success": "Özgeçmiş başarıyla kopyalandı",
+      "error": "Özgeçmiş kopyalanamadı"
+    },
+    "export": {
+      "tooltip": "Özgeçmişi Dışa Aktar",
+      "pdf": "PDF Olarak Aktar",
+      "json": "JSON Olarak Aktar",
+      "markdown": "Markdown Olarak Aktar",
+      "print": "Yazdır"
+    },
+    "autoOnePage": {
+      "tooltip": "Bir Sayfaya Sığdır",
+      "enabled": "Tek sayfa modu etkin",
+      "disabled": "Tek sayfa modu devre dışı",
+      "cannotFit": "İçerik çok fazla. Mümkün olduğunca optimize edildi ancak tek sayfaya sığmıyor. İçeriği basitleştirmeyi veya yan paneldeki kenar boşluklarını ve yazı boyutunu ayarlamayı deneyin."
+    },
+    "backup": {
+      "configured": "Yedekleme Yapılandırıldı",
+      "notConfigured": "Yedekleme Yapılandırılmadı",
+      "clickToConfigure": "Yapılandırmak için tıklayın"
+    }
+  },
+  "workbench": {
+    "sidePanel": {
+      "layout": {
+        "title": "Düzen",
+        "addCustomSection": "Modül Ekle",
+        "addCustomSectionOption": "Özel Bölüm Ekle",
+        "standardSections": {
+          "skills": "Yetenekler",
+          "experience": "Deneyim",
+          "projects": "Projeler",
+          "education": "Eğitim",
+          "selfEvaluation": "Hakkımda",
+          "certificates": "Sertifikalar"
+        }
+      },
+      "theme": {
+        "title": "Tema Rengi",
+        "custom": "Özel"
+      },
+      "typography": {
+        "title": "Tipografi",
+        "font": {
+          "title": "Yazı Tipi",
+          "alibaba": "Alibaba PuHuiTi",
+          "misans": "MiSans",
+          "notosanssc": "Noto Sans SC",
+          "sourcehanserifsc": "Source Han Serif SC",
+          "note": "MiSans, ücretsiz ticari lisansı altında kullanılmaktadır."
+        },
+        "lineHeight": {
+          "title": "Satır Yüksekliği",
+          "normal": "Varsayılan",
+          "relaxed": "Rahat",
+          "loose": "Geniş"
+        },
+        "baseFontSize": {
+          "title": "Temel Yazı Boyutu"
+        },
+        "headerSize": {
+          "title": "Bölüm Başlığı Boyutu"
+        },
+        "subheaderSize": {
+          "title": "Alt Başlık Boyutu"
+        }
+      },
+      "spacing": {
+        "title": "Boşluklar",
+        "pagePadding": {
+          "title": "Sayfa Kenar Boşluğu"
+        },
+        "sectionSpacing": {
+          "title": "Bölüm Boşluğu"
+        },
+        "paragraphSpacing": {
+          "title": "Paragraf Boşluğu"
+        }
+      },
+      "mode": {
+        "title": "Mod",
+        "useIconMode": {
+          "title": "İkon Modu"
+        },
+        "centerSubtitle": {
+          "title": "Alt Başlığı Ortala"
+        },
+        "flexibleHeaderLayout": {
+          "title": "Uzun Başlık"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "Profil",
+      "avatar": "Profil Fotoğrafı",
+      "basicField": "Temel",
+      "customField": "Özel",
+      "layout": "Hizalama",
+      "customFields": {
+        "placeholders": {
+          "label": "Etiket",
+          "value": "Değer"
+        },
+        "displayLabel": "Etiketi göster",
+        "addButton": "Özel Alan Ekle"
+      },
+      "basicFields": {
+        "name": "İsim",
+        "title": "Ünvan",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "website": "Web Sitesi",
+        "location": "Konum",
+        "birthDate": "Doğum Tarihi",
+        "employementStatus": "Çalışma Durumu"
+      },
+      "fieldVisibility": {
+        "show": "Göster",
+        "hide": "Gizle"
+      },
+      "githubContributions": "GitHub Katkıları"
+    },
+    "experiencePanel": {
+      "title": "İş Deneyimi",
+      "addButton": "İş Deneyimi Ekle",
+      "defaultProject": {
+        "company": "Teknoloji Şirketi Ltd. Şti.",
+        "position": "Kıdemli Frontend Mühendisi",
+        "date": "2020-Günümüz",
+        "details": "Çekirdek ürün geliştirme sürecinden sorumlu..."
+      },
+      "placeholders": {
+        "company": "şirket adı",
+        "position": "iş ünvanı",
+        "date": "çalışma süresi",
+        "details": "iş sorumlulukları ve başarılar"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "Şirket Adı",
+        "position": "Pozisyon",
+        "date": "Çalışma Süresi",
+        "details": "İş Sorumlulukları"
+      },
+      "placeholders": {
+        "company": "Şirket adını girin",
+        "position": "örneğin, Frontend Mühendisi",
+        "date": "örneğin, 2020-Günümüz",
+        "details": "Bu roldeki sorumluluklarınızı ve başarılarınızı açıklayın"
+      },
+      "buttons": {
+        "edit": "Düzenle",
+        "save": "Kaydet",
+        "cancel": "İptal",
+        "delete": "Sil"
+      },
+      "visibility": {
+        "show": "Göster",
+        "hide": "Gizle"
+      }
+    },
+    "projectPanel": {
+      "title": "Proje Deneyimi",
+      "addButton": "Proje Ekle",
+      "defaultProject": {
+        "name": "Kişisel Proje",
+        "description": "Proje Açıklaması",
+        "role": "Sorumluluklar",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "Proje Adı",
+        "description": "Proje geçmişini ve hedeflerini kısaca açıklayın",
+        "role": "Projedeki rolünüz ve sorumluluklarınız",
+        "date": "Proje zaman aralığı",
+        "link": "Proje bağlantısı"
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "Proje Adı",
+        "role": "Proje Rolü",
+        "date": "Proje Dönemi",
+        "description": "Proje Açıklaması",
+        "technologies": "Teknoloji Yığını",
+        "link": "Proje Bağlantısı",
+        "linkLabel": "Görünen Metin"
+      },
+      "placeholders": {
+        "name": "Proje adını girin",
+        "role": "Projedeki rolünüz",
+        "date": "Proje zaman aralığı",
+        "description": "Proje geçmişini ve hedeflerini kısaca açıklayın",
+        "technologies": "Kullanılan teknolojiler ve araçlar",
+        "link": "Proje bağlantısı",
+        "linkLabel": "Görünen metin"
+      },
+      "hints": {
+        "linkLabel": "Etiket boşsa, alan adı veya tam URL otomatik gösterilir. Yalnızca http:// ve https:// desteklenir."
+      },
+      "buttons": {
+        "edit": "Düzenle",
+        "save": "Kaydet",
+        "cancel": "İptal",
+        "delete": "Sil"
+      },
+      "visibility": {
+        "show": "Göster",
+        "hide": "Gizle"
+      }
+    },
+    "educationPanel": {
+      "title": "Eğitim",
+      "addButton": "Eğitim Ekle",
+      "defaultProject": {
+        "school": "Okul Adı",
+        "degree": "Derece",
+        "major": "Bölüm",
+        "date": "2020.09 - 2024.06"
+      },
+      "placeholders": {
+        "school": "Okul adını girin",
+        "degree": "Derece seçin",
+        "major": "Bölüm girin",
+        "date": "Eğitim dönemini girin"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "Okul Adı",
+        "degree": "Derece",
+        "major": "Bölüm",
+        "date": "Eğitim Dönemi",
+        "description": "Açıklama",
+        "gpa": "Not Ortalaması (GPA)",
+        "location": "Konum",
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi"
+      },
+      "placeholders": {
+        "school": "Okul adını girin",
+        "degree": "Derece seçin",
+        "major": "Bölüm girin",
+        "date": "Eğitim zaman aralığını girin",
+        "description": "Okul açıklamasını girin",
+        "gpa": "GPA girin",
+        "location": "Konum girin"
+      },
+      "buttons": {
+        "edit": "Düzenle",
+        "save": "Kaydet",
+        "cancel": "İptal",
+        "delete": "Sil"
+      },
+      "visibility": {
+        "show": "Göster",
+        "hide": "Gizle"
+      }
+    },
+    "certificatesPanel": {
+      "title": "Sertifikalar",
+      "addButton": "Sertifika Ekle",
+      "tips": "Resimleri doğrudan yükleyin veya yapıştırın (Cmd/Ctrl + V). Yatay düzen için genişlik oranını ayarlayın.",
+      "width": "Genişlik (%)",
+      "delete": "Sil",
+      "empty": "Henüz resim yok. Lütfen resim yükleyin veya yapıştırın."
+    }
+  },
+  "field": {
+    "selectDate": "Tarih Seç",
+    "enterYear": "Yıl Gir",
+    "toPresent": "Günümüz"
+  },
+  "richEditor": {
+    "bold": "Kalın",
+    "italic": "İtalik",
+    "underline": "Altı Çizili",
+    "link": "Bağlantı",
+    "linkPlaceholder": "Bir URL girin, örneğin https://example.com",
+    "linkApply": "Uygula",
+    "linkRemove": "Kaldır",
+    "linkInvalid": "Lütfen geçerli bir URL girin",
+    "textColor": "Metin Rengi",
+    "backgroundColor": "Arka Plan Rengi",
+    "alignLeft": "Sola Hizala",
+    "alignCenter": "Ortala",
+    "alignRight": "Sağa Hizala",
+    "alignJustify": "İki Yana Yasla",
+    "bulletList": "Madde İşaretli Liste",
+    "orderedList": "Numaralı Liste",
+    "undo": "Geri Al",
+    "redo": "İleri Al",
+    "aiPolish": "AI İyileştirme",
+    "paragraph": "Paragraf",
+    "heading1": "Başlık 1",
+    "heading2": "Başlık 2",
+    "heading3": "Başlık 3",
+    "colors": {
+      "black": "Siyah",
+      "darkGray": "Koyu Gri",
+      "gray": "Gri",
+      "red": "Kırmızı",
+      "orange": "Turuncu",
+      "orangeYellow": "Turuncu Sarı",
+      "yellow": "Sarı",
+      "yellowGreen": "Sarı Yeşil",
+      "green": "Yeşil",
+      "cyan": "Camgöbeği",
+      "lightBlue": "Açık Mavi",
+      "blue": "Mavi",
+      "purple": "Mor",
+      "magenta": "Eflatun",
+      "pink": "Pembe"
+    }
+  },
+  "iconSelector": {
+    "all": "Hepsi",
+    "searchPlaceholder": "İkon ara...",
+    "noMatchingIcons": "Eşleşen ikon bulunamadı",
+    "tryOtherKeywords": "Lütfen başka arama terimleri deneyin",
+    "selectOtherCategory": "Lütfen başka bir kategori seçin",
+    "categories": {
+      "personal": "Kişisel Bilgiler",
+      "education": "Eğitim",
+      "experience": "İş Deneyimi",
+      "skills": "Yetenekler",
+      "languages": "Diller",
+      "projects": "Projeler",
+      "achievements": "Başarılar",
+      "hobbies": "Hobiler",
+      "social": "Sosyal Medya",
+      "others": "Dİğerleri"
+    },
+    "icons": {
+      "user": "Kullanıcı",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "address": "Adres",
+      "website": "Web Sitesi",
+      "mobile": "Mobil",
+      "education": "Eğitim",
+      "school": "Okul",
+      "major": "Bölüm",
+      "library": "Kütüphane",
+      "scholarship": "Burs",
+      "work": "İş",
+      "company": "Şirket",
+      "office": "Ofis",
+      "dateRange": "Tarih Aralığı",
+      "workTime": "Çalışma Süresi",
+      "programming": "Programlama",
+      "system": "Sistem",
+      "database": "Veritabanı",
+      "terminal": "Terminal",
+      "techStack": "Teknoloji Yığını",
+      "language": "Dil",
+      "speaking": "Konuşma",
+      "communication": "İletişim",
+      "project": "Proje",
+      "branch": "Dallanma",
+      "release": "Sürüm",
+      "target": "Hedef",
+      "trophy": "Kupa",
+      "medal": "Madalya",
+      "star": "Yıldız",
+      "interest": "İlgi Alanı",
+      "music": "Müzik",
+      "art": "Sanat",
+      "photography": "Fotoğrafçılık",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "Profil",
+      "review": "İnceleme",
+      "filter": "Filtre",
+      "link": "Bağlantı",
+      "salary": "Maaş",
+      "idea": "Fikir",
+      "send": "Gönder",
+      "share": "Paylaş",
+      "settings": "Ayarlar",
+      "search": "Ara",
+      "flag": "Bayrak",
+      "bookmark": "Yer İşareti",
+      "thumbsUp": "Beğen",
+      "skill": "Yetenek"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "AI İyileştirme",
+    "description": {
+      "ready": "İsteğe bağlı talimatlar ekleyin ve ardından \"İyileştirmeyi başlat\" butonuna tıklayın",
+      "polishing": "İçeriğiniz iyileştiriliyor...",
+      "finished": "İçerik optimize edildi, lütfen sonucu kontrol edin"
+    },
+    "error": {
+      "configRequired": "Lütfen önce AI modelini yapılandırın",
+      "polishFailed": "İyileştirme başarısız",
+      "applied": "İyileştirilmiş içerik uygulandı"
+    },
+    "content": {
+      "original": "Orijinal İçerik",
+      "polished": "İyileştirilmiş İçerik"
+    },
+    "customInstructions": "Özel talimatlar",
+    "customInstructionsPlaceholder": "örneğin: Daha teknik terimler kullan, başarıları vurgula, tonu resmi tut... (isteğe bağlı)",
+    "button": {
+      "start": "İyileştirmeyi başlat",
+      "regenerate": "Yeniden oluştur",
+      "generating": "Oluşturuluyor...",
+      "apply": "İçeriği Uygula"
+    }
+  },
+  "photoConfig": {
+    "title": "Fotoğraf Ayarları",
+    "description": "Özgeçmiş fotoğrafınızı özelleştirin",
+    "upload": {
+      "title": "Online Bağlantı",
+      "dragHint": "Sürükleyip bırakın veya yüklemek için tıklayın",
+      "sizeLimit": "Resim boyutu 2MB'ı geçmemelidir",
+      "typeLimit": "Lütfen bir resim dosyası yükleyin",
+      "urlPlaceholder": "Resim bağlantısını girin",
+      "invalidUrl": "Geçersiz resim URL'si veya erişilemez, lütfen başka bir bağlantı deneyin",
+      "timeout": "Yükleme zaman aşımı",
+      "loadError": "Resim yüklenemedi"
+    },
+    "config": {
+      "aspectRatio": "En Boy Oranı",
+      "size": "Boyut",
+      "width": "Genişlik",
+      "height": "Yükseklik",
+      "border-radius": "Kenarlık Yarışapı",
+      "widthPlaceholder": "Genişlik",
+      "heightPlaceholder": "Yükseklik",
+      "ratios": {
+        "1:1": "1:1 Kare",
+        "4:3": "4:3 Yatay",
+        "3:4": "3:4 Dikey",
+        "16:9": "16:9 Geniş Ekran",
+        "custom": "Özel"
+      },
+      "borderRadius": {
+        "none": "Yok",
+        "medium": "Orta",
+        "full": "Daire",
+        "custom": "Özel",
+        "customPlaceholder": "Özel kenarlık yarıçapı"
+      }
+    },
+    "actions": {
+      "reset": "Sıfırla",
+      "close": "Kapat",
+      "cancel": "İptal",
+      "removePhoto": "Fotoğrafı Kaldır"
+    }
+  },
+  "themeModal": {
+    "delete": {
+      "title": "Silmeyi Onayla",
+      "description": "{title} öğesini silmek istediğinizden emin misiniz?",
+      "confirmText": "Sil",
+      "cancelText": "İptal"
+    }
+  },
+  "grammarCheck": {
+    "title": "AI Dilbilgisi Denetimi",
+    "description": "{count} öneri bulundu",
+    "exit": "Çıkış",
+    "spelling": "Yazım",
+    "punctuation": "Noktalama",
+    "original": "Orijinal",
+    "error_point": "Hata",
+    "suggestion": "Öneri",
+    "reason": "Sebep",
+    "accept": "Uygula",
+    "ignore": "Yoksay",
+    "found_issues": "{count} sorun bulundu",
+    "applied_success": "Değişiklikler uygulandı",
+    "apply_error": "Metin bulunamadı, otomatik uygulanamıyor",
+    "no_errors_title": "Harika!",
+    "no_errors_desc": "Dilbilgisi veya noktalama hatası bulunamadı."
+  },
+  "faqDialog": {
+    "title": "Sıkça Sorulan Sorular (SSS)",
+    "description": "Magic Resume çalışma alanı için yaygın ipuçları ve çözümler.",
+    "items": {
+      "browser-compatibility": {
+        "question": "Hangi tarayıcı önerilir?",
+        "answer": "En iyi düzen ve dışa aktarma deneyimi için Chrome veya Edge'in en son sürümünü kullanmanızı öneririz. Bazı eski tarayıcılar stil sorunlarına neden olabilir."
+      },
+      "export-failure": {
+        "question": "Dışa aktarma başarısız olursa veya stil bozulursa ne yapmalıyım?",
+        "answer": "1. En iyi uyumluluk için Google Chrome kullanmanızı öneririz.\n2. Hâlâ başarısız oluyorsa, eklenti çakışmalarını dışlamak için 'Gizli Mod'da deneyin.\n3. Alternatif olarak, dışa aktarma menüsünde 'PDF (Yedek)' seçeneğine tıklayın ve yazdır iletişim kutusunda 'PDF olarak kaydet'i seçin."
+      },
+      "export-methods": {
+        "question": "İki dışa aktarma yöntemi arasındaki fark nedir?",
+        "answer": "• PDF Dışa Aktar: Yüksek hassasiyetli işleme için bir arka uç hizmeti kullanır, düzeni %100 geri yükler. İK'ya resmi başvuru için önerilir.\n\n• Tarayıcı Yazdır: Tarayıcınızın yerel yazdır işlevini (PDF olarak kaydet) çağırır. Arka uç hizmeti meşgul olduğunda veya yazdırma kenar boşluklarını tarayıcı üzerinden ince ayar yapmanız gerektiğinde uygundur."
+      },
+      "drag-and-drop": {
+        "question": "Modülleri yeniden sıralamak için sürükleyip bırakmayı nasıl kullanırım?",
+        "answer": "Sol taraftaki düzenleme panelinin 'Düzen' ayarlarında, farenizi modül kartının sol tarafındaki 'Sürükleme Tutamağı' (genellikle altı noktalı simge) üzerine getirin. Farenin sol tuşuna basılı tutarak modülü yukarı veya aşağı sürükleyerek özgeçmişinizin bölümlerini yeniden sıralayabilirsiniz."
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ResumeTemplateComponent from "@/components/templates";
-import { initialResumeState, initialResumeStateEn } from "@/config/initialResumeData";
+import { initialResumeState, initialResumeStateEn, initialResumeStateTr } from "@/config/initialResumeData";
 import type { ResumeTemplate } from "@/types/template";
 import { normalizeFontFamily } from "@/utils/fonts";
 
@@ -132,7 +132,7 @@ const TemplateCardItem = ({
           >
             <div className="w-full h-full relative origin-top bg-white">
               <div
-                className="resume-preview absolute top-0 left-0 bg-white"
+                className="absolute top-0 left-0 bg-white"
                 style={{
                   width: "210mm",
                   height: "297mm",
@@ -235,7 +235,7 @@ const TemplatesPage = () => {
     }
   };
 
-  const baseData = locale === "en" ? initialResumeStateEn : initialResumeState;
+  const baseData = locale === "en" ? initialResumeStateEn : locale === "tr" ? initialResumeStateTr : initialResumeState;
   const activePreviewTemplate =
     DEFAULT_TEMPLATES.find((template) => template.id === previewTemplate) ??
     null;
@@ -264,7 +264,7 @@ const TemplatesPage = () => {
       });
     }
 
-    router.push({ to: "/app/workbench/$id", params: { id: resumeId } });
+    router.push(`/app/workbench/${resumeId}`);
   };
 
   return (
@@ -346,7 +346,7 @@ const TemplatesPage = () => {
                       style={{ width: "420px", height: "594px" }}
                     >
                       <div
-                        className="resume-preview absolute top-0 left-0 bg-white"
+                        className="absolute top-0 left-0 bg-white"
                         style={{
                           width: "210mm",
                           height: "297mm",
