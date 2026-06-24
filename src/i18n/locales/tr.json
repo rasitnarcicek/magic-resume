@@ -190,40 +190,40 @@
         "doubao": {
           "title": "Doubao",
           "description": "Volcengine'den API anahtarı al",
-          "apiKey": "Doubao API Key",
-          "modelId": "Model ID"
+          "apiKey": "Doubao API Anahtarı",
+          "modelId": "Model Kimliği"
         },
         "deepseek": {
           "title": "DeepSeek",
           "description": "DeepSeek Platformundan API anahtarı al",
-          "apiKey": "DeepSeek API Key"
+          "apiKey": "DeepSeek API Anahtarı"
         },
         "openai": {
           "title": "OpenAI",
           "description": "OpenAI veya OpenAI formatıyla uyumlu bir platformdan API anahtarı al",
-          "apiKey": "OpenAI API Key",
-          "modelId": "Model ID",
+          "apiKey": "OpenAI API Anahtarı",
+          "modelId": "Model Kimliği",
           "apiEndpoint": "API Uç Noktası, örnek: https://openai.example.org/v1"
         },
         "gemini": {
           "title": "Gemini",
           "description": "Metin iyileştirme, dilbilgisi denetimi ve PDF içe aktarmayı destekler. Önerilen model: gemini-flash-latest",
-          "apiKey": "Gemini API Key",
-          "modelId": "Gemini Model ID"
+          "apiKey": "Gemini API Anahtarı",
+          "modelId": "Gemini Model Kimliği"
         }
       }
     },
-          "templates": {
-                  "title": "Şablonlar",
-                  "useTemplate": "Şablonu Kullan",
-                  "preview": "Önizleme",
-                  "switchTemplate": "Şablon Değiştir",
-                  "swiss": {
-                    "name": "İsviçre Estetiği",
-                    "description": "Güçlü tipografik hiyerarşi ve geometrik vurgularla sanatsal Bauhaus düzeni, modern minimalizm gösterisi"
-                  },
-                  "classic": {
-              "name": "Klasik",
+    "templates": {
+      "title": "Şablonlar",
+      "useTemplate": "Şablonu Kullan",
+      "preview": "Önizleme",
+      "switchTemplate": "Şablon Değiştir",
+      "swiss": {
+        "name": "İsviçre Estetiği",
+        "description": "Güçlü tipografik hiyerarşi ve geometrik vurgularla sanatsal Bauhaus düzeni, modern minimalizm gösterisi"
+      },
+      "classic": {
+        "name": "Klasik",
         "description": "Geleneksel ve minimalist düzen, çoğu iş başvurusu için uygundur"
       },
       "modern": {
@@ -257,26 +257,26 @@
     }
   },
   "pdfExport": {
-      "modal": {
-        "title": "Özgeçmişi Dışa Aktar",
-        "subtitle": "Özgeçmişinizi dışa aktarmak istediğiniz formatı seçin",
-        "pdfDesc": "%100 format doğruluğu ile yüksek hassasiyetli işleme. İş başvuruları için önerilir.",
-        "printDesc": "Sistem yazdırma iletişim kutusu ile kaydedin. Özel kenar boşlukları veya yedek olarak kullanın.",
-        "jsonDesc": "Özgeçmiş verilerinizi yedeklemek veya cihazlar arasında aktarmak için JSON olarak dışa aktarın.",
-        "markdownDesc": "AI modelleriyle kolay paylaşım için düz Markdown metnine dönüştürün.",
-        "privacyNotice": "Magic Resume, özgeçmiş verilerinizi asla toplamayacağını, yüklemeyeceğini veya saklamayacağını taahhüt eder. Gizliliğiniz tamamen korunmaktadır."
-      },
-      "button": {
-        "export": "Dışa Aktar",
-        "exportPdf": "PDF Dışa Aktar (Sunucu)",
-        "exportJson": "JSON Yapılandırmasını Dışa Aktar",
-        "exportMarkdown": "Markdown Dışa Aktar",
-        "exporting": "Dışa aktarılıyor...",
-        "exportingJson": "Dışa aktarılıyor...",
-        "exportingMarkdown": "Dışa aktarılıyor...",
-        "print": "Tarayıcı Yazdır"
-      },
-      "toast": {
+    "modal": {
+      "title": "Özgeçmişi Dışa Aktar",
+      "subtitle": "Özgeçmişinizi dışa aktarmak istediğiniz formatı seçin",
+      "pdfDesc": "%100 format doğruluğu ile yüksek hassasiyetli işleme. İş başvuruları için önerilir.",
+      "printDesc": "Sistem yazdırma iletişim kutusu ile kaydedin. Özel kenar boşlukları veya yedek olarak kullanın.",
+      "jsonDesc": "Özgeçmiş verilerinizi yedeklemek veya cihazlar arasında aktarmak için JSON olarak dışa aktarın.",
+      "markdownDesc": "AI modelleriyle kolay paylaşım için düz Markdown metnine dönüştürün.",
+      "privacyNotice": "Magic Resume, özgeçmiş verilerinizi asla toplamayacağını, yüklemeyeceğini veya saklamayacağını taahhüt eder. Gizliliğiniz tamamen korunmaktadır."
+    },
+    "button": {
+      "export": "Dışa Aktar",
+      "exportPdf": "PDF Dışa Aktar (Sunucu)",
+      "exportJson": "JSON Yapılandırmasını Dışa Aktar",
+      "exportMarkdown": "Markdown Dışa Aktar",
+      "exporting": "Dışa aktarılıyor...",
+      "exportingJson": "Dışa aktarılıyor...",
+      "exportingMarkdown": "Dışa aktarılıyor...",
+      "print": "Tarayıcı Yazdır"
+    },
+    "toast": {
       "success": "PDF başarıyla dışa aktarıldı",
       "error": "PDF dışa aktarma başarısız",
       "jsonSuccess": "Yapılandırma başarıyla dışa aktarıldı",
@@ -815,5 +815,8 @@
         "answer": "Sol taraftaki düzenleme panelinin 'Düzen' ayarlarında, farenizi modül kartının sol tarafındaki 'Sürükleme Tutamağı' (genellikle altı noktalı simge) üzerine getirin. Farenin sol tuşuna basılı tutarak modülü yukarı veya aşağı sürükleyerek özgeçmişinizin bölümlerini yeniden sıralayabilirsiniz."
       }
     }
+  },
+  "templates": {
+    "switchTemplate": "Şablon Değiştir"
   }
 }
